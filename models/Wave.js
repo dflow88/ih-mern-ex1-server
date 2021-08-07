@@ -2,15 +2,15 @@
 const mongoose = require('mongoose')
 
 //SCHEMA
-const famousWaveSchema = mongoose.Schema({
+const waveSchema = mongoose.Schema({
     name: {
         type: String,
         required: true
     },
     country: String,
-    type: String,
-    season: String,
-    biggestSizeM: Number
+    waveType: String,
+    biggestSizeM: String,
+    season: String
 },
     {
         timestamps: true
@@ -18,7 +18,7 @@ const famousWaveSchema = mongoose.Schema({
 )
 
 //MODELO
-const FamousWave = mongoose.model('famousWaves', famousWaveSchema)
+const Wave = mongoose.model('Wave', waveSchema)
 
 //EXPORTACION
-module.exports = FamousWave
+module.exports = Wave

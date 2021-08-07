@@ -21,7 +21,7 @@ app.use(cors())
 
 // Api
 app.use('/api/proyectos', require('./routes/proyectos'))
-app.use('/api/waves', require('./routes/famousWaves'))
+app.use('/api/waves', require('./routes/waves'))
 
 // Monitoreo (Para ver que si funciona)
 app.get("/", (req, res) => {
