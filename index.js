@@ -17,7 +17,11 @@ connectDB()
 //habilitar CORS
 app.use(cors())
 
+//activar body parser
+app.use(express.json({extended: true}))
+
 // RUTEO
+
 
 // Api
 app.use('/api/proyectos', require('./routes/proyectos'))
